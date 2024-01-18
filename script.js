@@ -20,16 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
         output.innerHTML += 'help_commands: calculator; snake; proxy; youtube\n\n';
         break;
       case 'calculator':
-        // Your calculator logic here
+        output.innerHTML += 'We are redirecting you to the calculator app, please wait.\n\n';
         break;
       case 'snake':
-        // Your snake game logic here
+        output.innerHTML += 'We are redirecting you to the snake_game app, please wait.\n\n';
         break;
       case 'proxy':
-        // Your proxy logic here
+        output.innerHTML += 'We are attempting to redirect you to a proxy_app, please wait.\n[DEV_NOTE: Websites accessed via proxy may not function as intended, relocate back to the terminal using the back button at the top of the page.]\n\n';
         break;
       case 'youtube':
-        // Your YouTube logic here
+        output.innerHTML += "Attempting to redirect you to YOUTUBE. \n[DEV_NOTE: YouTube is a WORK IN PROGRESS, as videos are very buggy on Splashtops Server. (They don't load properly)]\n\n";
         break;
       default:
         output.innerHTML += 'Invalid command. Type "help" to see available commands.\n\n';

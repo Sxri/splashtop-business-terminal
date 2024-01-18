@@ -20,9 +20,19 @@ input {
   cursor: inherit;
   font-family: monospace;
   outline: none;
-  width: 100%;
+  width: calc(100% - 20px);
+  font-size: 18px;
 }
 
 input:focus {
   outline: none;
+}
+
+.prompt {
+  display: inline;
+  color: limegreen;
+}
+
+.response {
+  margin-top: 10px;
 }

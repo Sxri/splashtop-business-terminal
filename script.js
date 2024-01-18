@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   function processCommand(command) {
-    output.innerHTML += `> ${command}\n`;
+    output.innerHTML += `<span class="prompt">&gt; </span>${command}\n\n`;
 
     switch (command.toLowerCase()) {
       case 'help':
-        output.innerHTML += 'help_commands: calculator; snake; proxy; youtube\n';
+        output.innerHTML += 'help_commands: calculator; snake; proxy; youtube\n\n';
         break;
       case 'calculator':
         // Your calculator logic here
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Your YouTube logic here
         break;
       default:
-        output.innerHTML += 'Invalid command. Type "help" to see available commands.\n';
+        output.innerHTML += 'Invalid command. Type "help" to see available commands.\n\n';
         break;
     }
 

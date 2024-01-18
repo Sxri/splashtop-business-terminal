@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
         break;
       case 'calculator':
         output.innerHTML += 'We are redirecting you to the calculator app, please wait.\n\n';
-        window.location.href = "./display.html";
+        storeAndRedirect("./display.html", "calculator");
         break;
       case 'snake':
         output.innerHTML += 'We are redirecting you to the snake_game app, please wait.\n\n';
-        window.location.href = "./display.html";
+        storeAndRedirect("./display.html", "snake");
         break;
       case 'proxy':
         output.innerHTML += 'We are attempting to redirect you to a proxy_app, please wait.\n[DEV_NOTE: Websites accessed via proxy may not function as intended, relocate back to the terminal using the back button at the top of the page.]\n\n';
@@ -43,9 +43,10 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   input.focus();
-
-  if (window.location.href.includes('display.html')) {
-    const iframe = document.getElementById('iframe');
-    iframe.src = "https://example.com";
-  }
 });
+
+function storeAndRedirect(url, command) {
+  localStorage.setItem('redirectUrl', url);
+  localStorage.setItem('command', command);
+  window.location.href = url;
+}

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const input = document.getElementById('input');
 
   output.innerHTML += "Welcome to the Splashtop Business Terminal. A terminal where you can find functional resources and utilities.\nThis website is intended specifically for the Splashtop Business app on ChromeOS, say `help` for a list of commands. \n\n";
-  output.innerHTML += "SPLASHTOP_BUSINESS_TERMINAL IS IN SIGNIFICANT TESTING/DEVELOPING!!! BUGS WILL OCCUR.";
+  output.innerHTML += '<span style="font-weight: bold; color: red;">[COMMANDS ARE IN TESTING STAGE. BUGS WILL OCCUR]</span>\n\n';
   
   input.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         output.innerHTML += "Attempting to redirect you to YOUTUBE. \n[DEV_NOTE: YouTube is a WORK IN PROGRESS, as videos are very buggy on Splashtops Server. (They don't load properly)]\n\n";
         break;
       default:
-        output.innerHTML += 'Invalid command. Type "help" to see available commands.\n\n';
+        output.innerHTML += '<span style="font-weight: bold; color: red;">Invalid command. Type "help" to see available commands.</span>\n\n';
         break;
     }
 

@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const input = document.getElementById('input');
 
   output.innerHTML += "Welcome to the Splashtop Business Terminal. A terminal where you can find functional resources and utilities.\nThis website is intended specifically for the Splashtop Business app on ChromeOS, say `help` for a list of commands. \n\n";
+  output.innerHTML += "SPLASHTOP_BUSINESS_TERMINAL IS IN SIGNIFICANT TESTING/DEVELOPING!!! BUGS WILL OCCUR.";
   
   input.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     switch (command.toLowerCase()) {
       case 'help':
-        output.innerHTML += 'help_commands: calculator; snake; proxy; youtube\n\n';
+        output.innerHTML += 'help_commands[DEV_NOTE: Some commands are in testing, bugs may occur.]: \ncalculator;\nsnake;\nproxy;\nyoutube\ninfo;\nsetup;\n\n';
         break;
       case 'calculator':
         output.innerHTML += 'We are redirecting you to the calculator app, please wait.\n\n';

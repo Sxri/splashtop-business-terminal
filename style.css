@@ -36,3 +36,61 @@ input:focus {
 .response {
   margin-top: 10px;
 }
+
+.container {
+  position: relative;
+}
+
+iframe {
+  height: 100vh;
+  width: 100%;
+  border: none;
+}
+
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.navbar {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  display: none;
+  width: 100%;
+  background-color: #555;
+  z-index: 2;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  padding: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.frame:hover {
+  display: none;
+}
+
+.frame:hover + .navbar,
+.navbar:hover {
+  display: block;
+}

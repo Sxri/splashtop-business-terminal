@@ -51,8 +51,8 @@ iframe {
   position: absolute;
   top: 0;
   left: 0;
-  height: 50px;
-  width: 100%;
+  height: 15px;
+  width: 10%;
   background-color: #333;
   opacity: 0.8;
   z-index: 1;

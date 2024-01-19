@@ -3,10 +3,11 @@
 <head>
   <title>%</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <div class="container">
-    <iframe src="https://qwerty.zfppz.uk"></iframe>
+    <iframe src="" id="iframe"></iframe>
     <div class="frame">Open Nav</div>
     <nav class="navbar">
       <ul>
@@ -14,5 +15,19 @@
       </ul>
     </nav>
   </div>
+
+  <script>
+    // Get the stored redirect URL and command from localStorage
+    const redirectUrl = localStorage.getItem('redirectUrl');
+    const command = localStorage.getItem('command');
+
+    // Update the iframe's src attribute
+    const iframe = document.getElementById('iframe');
+    iframe.src = redirectUrl;
+
+    // Clear the stored values from localStorage
+    localStorage.removeItem('redirectUrl');
+    localStorage.removeItem('command');
+  </script>
 </body>
 </html>

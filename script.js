@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
+  document.write("<!DOCTYPE html>");
+  document.write("<html>");
+  document.write("<head>");
+  document.write("  <link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">");
+  document.write("</head>");
+  document.write("<body>");
+  document.write("  <div class=\"console\">");
+  document.write("    <pre id=\"output\"></pre>");
+  document.write("    <input type=\"text\" id=\"input\" autofocus />");
+  document.write("  </div>");
+  document.write("");
+  document.write("  <script src=\"script.js\"></script>");
+  document.write("</body>");
+  document.write("</html>");
+
+  
   const output = document.getElementById('output');
   const input = document.getElementById('input');
 

@@ -5,6 +5,7 @@ html, body {
 }
 
 body {
+  font-size: 24px;
   background-color: black;
   color: limegreen;
   font-family: monospace;
@@ -32,7 +33,7 @@ input {
   font-family: monospace;
   outline: none;
   width: calc(100% - 20px);
-  font-size: 18px;
+  font-size: 24px;
 }
 
 input:focus {

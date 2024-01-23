@@ -10,9 +10,9 @@
       const storedCommand = localStorage.getItem('command');
 
       if (storedCommand === 'proxy') {
-        iframe.src = 'https://goodfacts.utdnews.com/';
+        iframe.src = './snake.html';
       elseif (storedCommand === 'snake')
-        iframe.src = 'https://snake.io';
+        iframe.src = './snake.html';
       }
 
       localStorage.removeItem('command'); // Remove the stored command after using it
@@ -21,7 +21,7 @@
 </head>
 <body>
   <div class="container">
-    <iframe src="https://goodfacts.utdnews.com/"></iframe>
+    <iframe src="./snake.html"></iframe>
     <div class="frame">Open Nav</div>
     <nav class="navbar">
       <ul>

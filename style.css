@@ -1,6 +1,4 @@
 html, body {
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
 }
 
@@ -52,11 +50,13 @@ input:focus {
 }
 
 .container {
+  margin: auto;
   z-index: 99;
   position: relative;
 }
 
 iframe {
+  margin: auto;
   z-index: 99;
   height: 100vh;
   width: 100%;
@@ -93,7 +93,7 @@ iframe {
 
 .navbar ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   display: flex;
   justify-content: center;

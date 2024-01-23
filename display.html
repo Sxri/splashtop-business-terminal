@@ -5,13 +5,14 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
   <script>
-    // Add this script to change the iframe source after the page is fully loaded
     document.addEventListener('DOMContentLoaded', function () {
       const iframe = document.querySelector('iframe');
       const storedCommand = localStorage.getItem('command');
 
-      if (storedCommand === 'calculator') {
-        iframe.src = 'https://example.com'; // Replace with the actual calculator URL
+      if (storedCommand === 'proxy') {
+        iframe.src = 'https://qwerty.zfppz.uk';
+      elseif (storedCommand === 'snake')
+        iframe.src = 'https://snake.io';
       }
 
       localStorage.removeItem('command'); // Remove the stored command after using it

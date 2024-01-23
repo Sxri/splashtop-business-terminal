@@ -51,6 +51,8 @@ input:focus {
 
 .container {
   margin: auto;
+  height: 1080px;
+  width: 1920px;
   z-index: 99;
   position: relative;
 }

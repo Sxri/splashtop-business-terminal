@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
       case 'proxy':
         output.innerHTML += 'We are attempting to redirect you to a proxy_app, please wait.\n[DEV_NOTE: Websites accessed via proxy may not function as intended, relocate back to the terminal using the back button at the top of the page.]\n\n';
+        storeAndRedirect("./display.html", "proxy");
         break;
       case 'youtube':
         output.innerHTML += "Attempting to redirect you to YOUTUBE. \n[DEV_NOTE: YouTube is a WORK IN PROGRESS, as videos are very buggy on Splashtops Server. (They don't load properly)]\n\n";

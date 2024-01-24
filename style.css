@@ -13,6 +13,17 @@ body {
   overflow: hidden;
 }
 
+	canvas {
+		display: block;
+		position: absolute;
+		border: 5px solid  #009BFF;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+	}
+
 .console {
   z-index: 99;
   height: 1080px;

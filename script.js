@@ -51,3 +51,11 @@ function storeAndRedirect(url, command) {
   localStorage.setItem('command', command);
   window.location.href = url;
 }
+
+function showTime() {
+	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+}
+showTime();
+setInterval(function () {
+	showTime();
+}, 1000);
